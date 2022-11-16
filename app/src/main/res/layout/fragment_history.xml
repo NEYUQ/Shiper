@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:backgroundTint="#B8B0B0">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6sp"
+                android:text="Personal information"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_photo_user"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_below="@id/tv"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="6sp"
+                android:src="@drawable/ic_account_circle" />
+
+            <TextView
+                android:id="@+id/tv_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/img_photo_user"
+                android:paddingStart="10sp"
+                android:paddingLeft="10sp"
+                android:text="Nguyen van a"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_phone_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_user"
+                android:layout_marginTop="6sp"
+                android:layout_toRightOf="@id/img_photo_user"
+                android:paddingStart="10sp"
+                android:paddingLeft="10sp"
+                android:text="0123456789"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_id_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone_user"
+                android:layout_marginTop="6sp"
+                android:layout_toRightOf="@id/img_photo_user"
+                android:paddingStart="10sp"
+                android:paddingLeft="10sp"
+                android:text="ID: ipkd23423"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:text="LOG OUT"
+        android:layout_alignRight="@id/cardview"
+        />
+
+
+</RelativeLayout>
