@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.bottomnavigationbardeprecated.Fragment.FavoriteFragment;
-import com.example.bottomnavigationbardeprecated.Fragment.HistoryFragment;
-import com.example.bottomnavigationbardeprecated.Fragment.HomeFragment;
+import com.example.bottomnavigationbardeprecated.Fragment.DeliveryFragment;
+import com.example.bottomnavigationbardeprecated.Fragment.UserFragment;
+import com.example.bottomnavigationbardeprecated.Fragment.NotiFragment;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -23,13 +23,13 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
         switch (position)
         {
             case 0:
-                return new HomeFragment();
+                return new NotiFragment();
             case 1:
-                return new FavoriteFragment();
+                return new DeliveryFragment();
             case 2:
-                return new HistoryFragment();
+                return new UserFragment();
             default:
-                return new HomeFragment();
+                return new NotiFragment();
         }
     }
 

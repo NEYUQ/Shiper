@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bottomnavigationbardeprecated.MainActivity;
 import com.example.bottomnavigationbardeprecated.Model.Order;
 import com.example.bottomnavigationbardeprecated.R;
 import com.example.bottomnavigationbardeprecated.Storage.DataSharedPreferences;
@@ -29,7 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FavoriteFragment extends Fragment {
+public class DeliveryFragment extends Fragment {
     private View v;
     private RecyclerView rcv_delivery;
     private List<Order> mList;

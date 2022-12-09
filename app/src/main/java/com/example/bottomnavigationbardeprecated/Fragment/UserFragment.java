@@ -1,18 +1,12 @@
 package com.example.bottomnavigationbardeprecated.Fragment;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,21 +15,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.bottomnavigationbardeprecated.LoginActivity;
 import com.example.bottomnavigationbardeprecated.MainActivity;
-import com.example.bottomnavigationbardeprecated.Model.Food;
-import com.example.bottomnavigationbardeprecated.Model.Order;
 import com.example.bottomnavigationbardeprecated.Model.TaiXe;
 import com.example.bottomnavigationbardeprecated.R;
 import com.example.bottomnavigationbardeprecated.Storage.DataSharedPreferences;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class HistoryFragment extends Fragment {
+public class UserFragment extends Fragment {
     private View v;
     private ImageView img_photo_user;
     private TextView tv_name_user,tv_phone_user,tv_id_user;

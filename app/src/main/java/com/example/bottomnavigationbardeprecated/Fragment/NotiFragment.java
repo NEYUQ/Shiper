@@ -29,7 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment {
+public class NotiFragment extends Fragment {
     private View v;
     private RecyclerView rcv_notification;
     private List<Order> mList;
@@ -68,6 +68,7 @@ public class HomeFragment extends Fragment {
         rcv_notification.setLayoutManager(linearLayoutManager);
         rcv_notification.setAdapter(adapter);
         ///////////////
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
